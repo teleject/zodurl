@@ -1,5 +1,4 @@
 <html>
-
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
@@ -30,10 +29,11 @@ footer {
 <body>
   <main>
   <h1>{{ title or pkg.name }}</h1>
-  <h2>{{ pkg.description }}</h2>
+  <h2>{{ description or pkg.description }}</h2>
   {{ content | safe }}
   <footer>
     <p>URL shortener maintained by <a href="http://twitter.com/teleject">Christopher Schmitt</a></p>
+    <p>Built with <a href="https://github.com/nhoizey/1y">1y</a>. URL redirects are at <a href="https://github.com/teleject/zodurl">GitHub</a>.
   </main>
 </body>
 
