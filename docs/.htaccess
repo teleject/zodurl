@@ -1,4 +1,7 @@
 
+# Thanks to https://george.mand.is/2017/12/compress-your-favicon-with-gzip/
+AddOutputFilterByType DEFLATE image/x-icon
+
 # Using Apache's mod_alias if available
 <IfModule mod_alias.c>
 Redirect 301 "/example" "https://www.example.com/"
