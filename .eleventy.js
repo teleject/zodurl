@@ -1,14 +1,9 @@
-  module.exports = function(eleventyConfig) {
-    eleventyConfig.setTemplateFormats([
-      "md",
-      "ico"
-    ]);
-  };
-
-  module.exports = {
-    dir: {
-        output: "docs"
-    }
-};
-
+module.exports = function(config) {
+    config.addPassthroughCopy('favicon.ico');
+    config.addPassthroughCopy('.htaccess');
   
+    return {
+        dir: { output: 'docs' }
+    };
+
+};
