@@ -9,6 +9,7 @@ jobs:
       steps: 
         - uses: actions/checkout@v1
         - name: Build
+          run: npm install
           run: npm run build
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
