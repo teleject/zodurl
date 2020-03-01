@@ -19,3 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build --if-present
+    - uses: actions/download-artifact@v1
+      with:
+        name: my-artifact
+    - run: cat my-artifact
