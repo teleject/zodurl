@@ -27,6 +27,7 @@ During the build process, a series of files will be updated to allow for the sho
 
 ## Copyright
 
-Thanks to [Nicolas Hoizey](https://github.com/teleject/zodurl/blob/master/LICENSE.md) for creating 1ty.
+Thanks to [Nicolas Hoizey](https://github.com/teleject/zodurl/blob/master/LICENSE.md) for creating [1ty](https://github.com/nhoizey/1y). 
+
 
 
