@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -11,25 +12,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-family: system-ui, sans-serif;
+  font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, system-ui, sans-serif;
 }
+
+body {
+  background-color: #0F100E;
+  color: #EAE6DF;
+  box-sizing: border-box;
+}
+a:link, a:visited {
+  color: #BF9E84;
+}
+a:hover {
+  color: #9B805A;
+}
+
 
 body > * {
   max-width: 40em;
 }
 
 footer {
-  margin: 3em 0 0;
-  border-top: 1px solid #ccc;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 0 1rem .33rem 1rem;
+  border-top: 1px solid #333;
 }
 </style>
 </head>
 
 <body>
+
   <main>
-  <h1>1y</h1>
-  <h2>A short URL manager</h2>
+   <h1>1y</h1>
+    <h2>A short URL manager</h2>
+  </main>
   
 <meta http-equiv="refresh" content="0; URL='https://nicolas-hoizey.com/'" />
 <script>
@@ -39,7 +57,7 @@ window.location = "https://nicolas-hoizey.com/";
   <footer>
     <p>URL shortener maintained by <a href="http://twitter.com/teleject">Christopher Schmitt</a></p>
     <p>Built with <a href="https://github.com/nhoizey/1y">1y</a>. URL redirects are at <a href="https://github.com/teleject/zodurl">GitHub</a>.
-  </main>
+  </footer>
 </body>
 
 </html>

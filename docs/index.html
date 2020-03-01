@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -11,30 +12,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-family: system-ui, sans-serif;
+  font-family: Gotham, “Helvetica Neue”, Helvetica, Arial, system-ui, sans-serif;
 }
+
+body {
+  background-color: #0F100E;
+  color: #EAE6DF;
+  box-sizing: border-box;
+}
+a:link, a:visited {
+  color: #BF9E84;
+}
+a:hover {
+  color: #9B805A;
+}
+
 
 body > * {
   max-width: 40em;
 }
 
 footer {
-  margin: 3em 0 0;
-  border-top: 1px solid #ccc;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 0 1rem .33rem 1rem;
+  border-top: 1px solid #333;
 }
 </style>
 </head>
 
 <body>
+
   <main>
-  <h1>Zod URL</h1>
-  <h2>Kneel before your URL</h2>
+   <h1>Zod URL</h1>
+    <h2>Kneel before your URL</h2>
+  </main>
   
   <footer>
     <p>URL shortener maintained by <a href="http://twitter.com/teleject">Christopher Schmitt</a></p>
     <p>Built with <a href="https://github.com/nhoizey/1y">1y</a>. URL redirects are at <a href="https://github.com/teleject/zodurl">GitHub</a>.
-  </main>
+  </footer>
 </body>
 
 </html>

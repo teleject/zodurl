@@ -7,6 +7,8 @@ AddOutputFilterByType DEFLATE image/x-icon
 Redirect 301 "/example" "https://www.example.com/"
 Redirect 301 "/nho" "https://nicolas-hoizey.com/"
 Redirect 301 "/teleject" "https://twitter.com/@teleject"
+Redirect 301 "/christopher" "http://christopher.org"
+Redirect 301 "/superman" "https://i.giphy.com/media/3HSzHiDUtNLhu/giphy.webp"
 </IfModule>
 
 # Else, using Apache's mod_rewrite if available
@@ -15,5 +17,7 @@ Redirect 301 "/teleject" "https://twitter.com/@teleject"
 RewriteRule ^example$ https://www.example.com/ [QSA,L,R=301]
 RewriteRule ^nho$ https://nicolas-hoizey.com/ [QSA,L,R=301]
 RewriteRule ^teleject$ https://twitter.com/@teleject [QSA,L,R=301]
+RewriteRule ^christopher$ http://christopher.org [QSA,L,R=301]
+RewriteRule ^superman$ https://i.giphy.com/media/3HSzHiDUtNLhu/giphy.webp [QSA,L,R=301]
 </IfModule>
 </IfModule>
