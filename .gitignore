@@ -2,3 +2,4 @@ node_modules/
 _site/
 docs/
 .DS_Store
+_insp/
