@@ -4,6 +4,8 @@ description: "Kneel before your shortened URL"
 layout: default.njk
 ---
 
+<h3><a href="https://zodurl.com/{{ page.fileSlug }}/">https://zodurl.com/{{ page.fileSlug }}/</a></h3>
+
 <meta http-equiv="refresh" content="0; URL='{{ url }}'" />
 <script>
 window.location = "{{ url }}";
