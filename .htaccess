@@ -6,6 +6,7 @@ AddOutputFilterByType DEFLATE image/x-icon
 <IfModule mod_alias.c>
 Redirect 301 "/christopher" "http://christopher.org"
 Redirect 301 "/example" "https://www.example.com/"
+Redirect 301 "/fortune-500-color-spreadsheet" "https://docs.google.com/spreadsheets/d/1GA8HyOnp4KK8_EAkkhpggXneQLP0lnywrBvLZxt8iy0/edit?usp=sharing"
 Redirect 301 "/last-match-trailer" "https://www.youtube.com/watch?v=I-QhfKdwIXo"
 Redirect 301 "/mxy" "https://en.wikipedia.org/wiki/Mister_Mxyzptlk"
 Redirect 301 "/nho" "https://nicolas-hoizey.com/"
@@ -18,6 +19,7 @@ Redirect 301 "/teleject" "https://twitter.com/@teleject"
 <IfModule mod_rewrite.c>
 RewriteRule ^christopher$ http://christopher.org [QSA,L,R=301]
 RewriteRule ^example$ https://www.example.com/ [QSA,L,R=301]
+RewriteRule ^fortune-500-color-spreadsheet$ https://docs.google.com/spreadsheets/d/1GA8HyOnp4KK8_EAkkhpggXneQLP0lnywrBvLZxt8iy0/edit?usp=sharing [QSA,L,R=301]
 RewriteRule ^last-match-trailer$ https://www.youtube.com/watch?v=I-QhfKdwIXo [QSA,L,R=301]
 RewriteRule ^mxy$ https://en.wikipedia.org/wiki/Mister_Mxyzptlk [QSA,L,R=301]
 RewriteRule ^nho$ https://nicolas-hoizey.com/ [QSA,L,R=301]
