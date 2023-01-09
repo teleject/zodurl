@@ -14,7 +14,7 @@
     "build": "rimraf docs && eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "rimraf": "^3.0.1"
   }
 }
